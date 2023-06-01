@@ -1,6 +1,6 @@
 from kafka import KafkaProducer
 
-bootstrap_servers = ':29092'
+bootstrap_servers = 'kafka:29092'
 topic = 'my_topic'
 
 producer = KafkaProducer(bootstrap_servers=bootstrap_servers)
