@@ -1,6 +1,6 @@
 from kafka import KafkaConsumer
 
-bootstrap_servers = '172.20.0.3:29092'
+bootstrap_servers = 'kafka:29092'
 topic = 'my_topic'
 
 consumer = KafkaConsumer(
