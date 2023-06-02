@@ -5,9 +5,7 @@ def kafka_connect_serveur() -> None:
     """"""
 
     kafka_bootstrap_servers = ':29092'
-    kafka_topic = 'mytopic'
-
-    csvfile = ''
+    kafka_topic = 'mytopic
 
     producer = KafkaProducer(bootstrap_servers=kafka_bootstrap_servers)
 
@@ -16,6 +14,8 @@ def kafka_connect_serveur() -> None:
 def kafka_send_data() -> list:
 
     producer = kafka_connect_serveur()
+    
+    csvfile = ''
 
     with open(csvfile, 'r') as csv_file:
         csv_reader = csv.reader(csv_file)
